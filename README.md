@@ -14,7 +14,7 @@
             des Aufgabenstellers entsprechen. Dieses Repos ist als Hilfe gedacht, wenn man nicht mehr weiter 
             weiß oder man gerne alternative Lösungswege sehen würde. Ich empfehle es trotzdem jedem zu versuchen die Aufgaben selbständig zu lösen
             </p>
-            <p style="color: red">Asamblercode</p>
+            <p style="color: red">Assamblercode</p>
     </div>
     <div id="intern_link">
         <a id="moodlekurs" href="https://moodle.hs-coburg.de/course/view.php?id=8693">

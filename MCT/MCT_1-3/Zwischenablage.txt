@@ -1,0 +1,32 @@
+
+;------- Blinker Rechts nach Links ------------------------------------
+loop_re
+	ldr R0, =GPIOA_ODR
+	
+	
+	lsl R2, R2, #1
+	add R2, R2, #1
+	cmp R2, #0x100
+	
+	blt weiter
+	mov R2, #0x00
+	ldr R3, =0xC3500
+	b pause_z
+
+;------- Blinker Links nach Rechts ----------------------------------------------
+loop_li
+	ldr R0, =GPIOA_ODR
+	
+	;add R2, R2, #0x100
+	lsr R2, R2, #1
+	add R2, R2, #0x80
+	cmp R2, #0xFF
+	
+	blt weiter
+	str R2, [R0]
+	mov R2, #0x00
+	ldr R3, =0xC3500
+	b pause_z	
+
+
+

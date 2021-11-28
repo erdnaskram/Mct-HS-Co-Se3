@@ -1,0 +1,6 @@
+Dependencies for Project 'STM32G474', Target 'MCT_Px': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
+F (.\startup_stm32g431xx.s)(0x617A5C19)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_MCT_Px-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.1.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 529" --pd "STM32G474xx SETA 1"--list .\listings\startup_stm32g431xx.lst --xref -o .\objects\startup_stm32g431xx.o --depend .\objects\startup_stm32g431xx.d)
+F (.\main.s)(0x619F63AF)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_MCT_Px-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.1.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 529" --pd "STM32G474xx SETA 1"--list .\listings\main.lst --xref -o .\objects\main.o --depend .\objects\main.d)
+I (STM32G4xx_REG_ASM.inc)(0x617A5C19)
+F (.\STM32G4xx_REG_ASM.inc)(0x617A5C19)()

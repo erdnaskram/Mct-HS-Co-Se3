@@ -1,0 +1,57 @@
+main PROC
+
+	ldr R0, =RCC_AHB2ENR
+	ldr R1, =5
+	str R1, [R0]
+	
+	ldr R0, =GPIOA_MODER
+	ldr R1, [R0]
+	ldr R2, =0xFFFF0000
+	and R1, R1, R2
+	ldr R2, =0x00005555
+	orr R1, R2
+	str R1, [R0]
+	
+	mov R2, #0x00
+
+loop
+	ldr R2, =GPIOA_ODR
+	ldr R3, =0x0
+	str R3, [R2]
+	mov R0, #500
+	bl up_delay
+	
+	ldr R2, =GPIOA_ODR
+	ldr R3, =0x1
+	str R3, [R2]
+	bl up_delay
+	b loop
+
+
+
+	ENDP
+
+
+
+
+
+
+up_delay PROC
+	PUSH {R0, R1}
+	
+	MOV R1, #3200
+	MUL R0, R0, R1
+
+loop_delay
+	SUB R0, R0, #1
+	CMP R0, #0
+	BNE loop_delay
+	NOP
+	
+	POP {R0, R1}
+	BX 	lr
+	
+	ENDP
+
+
+	END
